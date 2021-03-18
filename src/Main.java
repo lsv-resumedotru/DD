@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main { // Это баловство. Пожалуйста, смотрите TaskA или SimpleCode
 
     public static void main(String[] args) {
 

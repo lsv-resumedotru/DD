@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SimpleCode {
+public class SimpleCode { // Это упрощенный вариант, но с подобием проверки на валидность (подробнее в видео)
 
     public static void main(String []args) {
 

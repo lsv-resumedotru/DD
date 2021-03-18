@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TaskA {
+public class TaskA { // Это расширенный вариант с использованием рекурсии (подробнее в видео)
 
     public static void main(String []args) {
 
@@ -22,7 +22,7 @@ public class TaskA {
 
         int index = 0;
         while(index < input.length()) {
-            Character ch = input.charAt(index); // [
+            Character ch = input.charAt(index);
 
             if(Character.isDigit(ch)) {
                 multiplier = Character.getNumericValue(ch);
@@ -32,7 +32,7 @@ public class TaskA {
                 Boolean isRecursive = false;
 
                 int nextOpenBraceIndex = input.indexOf('[', index+1); // 3
-                int nextCloseBraceIndex = input.indexOf(']'); // 5
+                int nextCloseBraceIndex = input.indexOf(']');
                 if(nextOpenBraceIndex < nextCloseBraceIndex) {
                     isRecursive = true;
                 } else {
@@ -40,7 +40,7 @@ public class TaskA {
                 }
 
                 if(isRecursive) {
-                    int closeBracesIndex = input.lastIndexOf(']'); // 7
+                    int closeBracesIndex = input.lastIndexOf(']');
                     line = input.substring(index+1, closeBracesIndex);
                     Boolean isCleanText = true;
                     for(int i = 0; i<line.length(); i++) {
@@ -66,7 +66,7 @@ public class TaskA {
                     index = 0;
 
                 } else {
-                    int closeBracesIndex = input.indexOf(']'); // 5
+                    int closeBracesIndex = input.indexOf(']');
                     line = input.substring(index+1, closeBracesIndex);
                     index = ++closeBracesIndex;
                     input = input.substring(index);
